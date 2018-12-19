@@ -1,0 +1,125 @@
+html {
+  font-family: 'Abril Fatface', serif;
+  font-family: 'Raleway Dots', serif;
+
+}
+
+
+.container {
+  background-color: white;
+  max-width: 100%;
+  }
+
+.banner {
+  background-color: white;
+  height: 11rem;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  margin-bottom: 3.5rem;
+  border-top: 1rem solid black;
+}
+
+.box {
+}
+
+h1 {
+  font-family: 'Raleway Dots', serif;
+
+color: black;
+font-size: 3rem;
+text-align: center;
+z-index: 1;
+width: 100%;
+padding: 2rem 0 0.5rem 0rem;
+
+
+  }
+
+  h2 {
+
+    font-family: 'Raleway Dots', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 0.35rem;
+  }
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  max-height: 100%;
+ z-index: 2;
+}
+
+
+.pages {
+  display: flex;
+  margin: 0 auto;
+  flex: 1 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 2rem;
+
+}
+
+.vertical {
+  max-width: 50%;
+  max-height: 50%;
+  align-items: center;
+}
+
+.horizontal {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+#gocowboys {
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 2rem;
+
+
+}
+
+footer {
+  font-family: 'Abril Fatface', serif;
+  font-size: .8rem;
+  text-align: left;
+  background-color: white;
+  height: 2rem;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  padding: 1rem 0 0 1rem;
+ margin-top: 2rem;
+  border-bottom: 0.5rem solid black;
+
+}
+
+
+
+  @media only screen and (max-width: 768px) {
+
+
+  }
+
+  @media only screen and (max-width: 680px) {
+
+
+
+    }
+
+
+    @media only screen and (max-width: 670px) {
+
+
+
+
+    }
