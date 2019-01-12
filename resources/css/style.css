@@ -1,55 +1,348 @@
 html {
-  font-family: 'Abril Fatface', serif;
-  font-family: 'Raleway Dots', serif;
+  font-family: 'Playfair Display', serif;
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Raleway', sans-serif;
+ font-size: 16px;
+}
+
+/* navigation */
+
+/* .navbar {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: black;
+  height: 5rem;
+  background-color: white;
+}
+
+.navbar a:hover {
+  color: grey;
+}
+.navbar-fixed-top {
+    position:fixed !important;
+} */
+
+
+
+.menu {
 
 }
 
-
-.container {
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Archivo Black', sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   background-color: white;
-  max-width: 100%;
-  }
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  text-decoration: none;
+
+}
+a {
+  color: black;
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+ color: grey;
+}
+
+/* .active {
+  background-color:  ;
+} */
+
+@media only screen and (max-width: 871px) {
+.menu ul {
+  display: none;
+}
+}
+
+/* Bootstrap Overrides */
+
+/* .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: black;
+} */
+
+/* .navbar.navbar-nav {
+  color: black;
+} */
 
 .banner {
-  background-color: white;
-  height: 11rem;
-  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-  margin-bottom: 3.5rem;
-  border-top: 1rem solid black;
+  background-color: #010b13;
+  height: 34rem;
+  /* box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
+  padding-bottom: 4rem;
+  border-top: 1rem solid white;
 }
 
-.box {
+.banner img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 7rem;
 }
 
-h1 {
-  font-family: 'Raleway Dots', serif;
 
-color: black;
-font-size: 3rem;
+.banner h1 {
+  font-family: 'Raleway', sans-serif;
+color: white;
+font-size: 3.5rem;
 text-align: center;
-z-index: 1;
 width: 100%;
-padding: 2rem 0 0.5rem 0rem;
-
-
+padding: 1rem;
   }
 
-  h2 {
 
-    font-family: 'Raleway Dots', sans-serif;
-    font-size: 1.3rem;
-    text-align: center;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 0.35rem;
+.banner p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+
+}
+
+.btn-primary {
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  width: 4.5rem;
+  border: 0;
+  margin-top: 3rem;
+  color: white;
+  background-color: #010b13;
+  transition: .5s;
+  border: 1.5pt solid white;
+  border-radius: 0;
+}
+
+.centered {
+  text-align:center;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+  border: black;
+  /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.9); */
+}
+
+.btn-primary:active {
+  /* box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); */
+  color: black;
+  background-color: white;
+}
+
+.btn-primary:visited {
+  /* box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); */
+  color: black;
+  background-color: white;
+}
+
+@media only screen and (max-width: 558px) {
+.banner h1 {
+  font-size: 2.5;
+}
+
+  .banner p {
+    font-size: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+
   }
+}
+
+@media only screen and (max-width: 425px) {
+.banner {
+  height: 37rem;
+}
+
+.pages {
+  padding-top: 40rem;
+}
+
+}
+
+
+
+
+/* Jumbotron */
+
+
+
+.jumbotron {
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  height: 15rem;
+  /* background-size: cover; */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: 4rem;
+  border-bottom: 1pt dotted black;
+
+
+  /* text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; */
+}
+
+/* .jumbotron img {
+  max-width: 50%;
+} */
+
+.background-writing {
+  background-image: url("../images/slide-skye.jpg");
+}
+
+.background-editing {
+  background-image: url("../images/slide-dalton.jpg");
+}
+
+.background-design {
+  background-image: url("../images/slide-gtm.jpg");
+}
+
+.background-design2 {
+  background-image: url("../images/slide-cinderella.jpg");
+}
+
+.background-betoota {
+  background-image: url("../images/slide-betoota.jpg");
+}
+
+.background-socceroos {
+  background-image: url("../images/slide-socceroos.jpg");
+}
+
+.background-reboots {
+  background-image: url("../images/slide-reboots.jpg");
+}
+
+.background-streaming {
+  background-image: url("../images/slide-streaming.jpg");
+}
+
+.background-bodyart {
+  background-image: url("../images/slide-bodyart.jpg");
+}
+
+.background-portraitgallery {
+  background-image: url("../images/slide-portraitgallery.jpg");
+}
+
+.background-whales {
+  background-image: url("../images/slide-whales.jpg");
+}
+
+.background-gocowboys {
+  background-image: url("../images/slide-gocowboys.jpg");
+}
+
+.background-inpics {
+  background-image: url("../images/slide-inpics.jpg");
+}
+
+.background-regional {
+  background-image: url("../images/slide-regional.jpg");
+}
+
+.background-gamechange {
+  background-image: url("../images/slide-gamechange.jpg");
+}
+
+.background-firebaby {
+  background-image: url("../images/slide-firebaby.jpg");
+}
+
+.background-refugees1 {
+  background-image: url("../images/slide-refugees1.jpg");
+}
+.background-books {
+  background-image: url("../images/slide-books.jpg");
+}
+
+.background-gotime {
+  background-image: url("../images/slide-gotime.jpg");
+}
+
+.background-angusferne {
+  background-image: url("../images/slide-angusferne.jpg");
+}
+
+
+
+
+/* Slick Overrides */
+
+.slick-slide {
+  outline: none;
+}
+
+/* .jumbotron h1 {
+  font-family: "Abril fatface", serif;
+  font-size: 7.1rem;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+} */
+
+@media only screen and (max-width: 755px) {
+
+}
+
+
+
+
+
 
 .images {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
   max-height: 100%;
- z-index: 2;
 }
 
 
@@ -60,44 +353,68 @@ padding: 2rem 0 0.5rem 0rem;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
+  padding-top: 16rem;
 }
-
 
 img {
   max-width: 100%;
   max-height: 100%;
   padding-top: 2rem;
-
 }
 
 .vertical {
+  flex-wrap: wrap;
   max-width: 50%;
   max-height: 50%;
   align-items: center;
 }
 
-.horizontal {
+/* .horizontal {
   margin-left: 2rem;
   margin-right: 2rem;
+} */
+
+.pages h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.1rem;
+  margin-top: 4rem;
+  border: 5pt solid black;
+  padding: 1rem 2rem;
+}
+
+.pages h3:hover {
+  color: black;
+}
+
+.pages h3:active {
+  color: black;
+}
+
+.pages h3:visited {
+  color: black;
 }
 
 
-#gocowboys {
+
+/* #gocowboys {
   max-width: 100%;
   max-height: 100%;
   padding-top: 2rem;
 
 
-}
+} */
 
 footer {
-  font-family: 'Abril Fatface', serif;
-  font-size: .8rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
   text-align: left;
+  color: black;
   background-color: white;
-  height: 2rem;
+  height: 5rem;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-  padding: 1rem 0 0 1rem;
+  padding: 2rem 0rem 3rem 1rem;
  margin-top: 2rem;
   border-bottom: 0.5rem solid black;
 
@@ -118,8 +435,6 @@ footer {
 
 
     @media only screen and (max-width: 670px) {
-
-
 
 
     }
