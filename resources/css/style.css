@@ -395,7 +395,14 @@ img {
   color: black;
 }
 
-
+a:visited {
+  text-decoration: none; color:black; }
+a:hover {
+  text-decoration: none; color:blacj; }
+a:focus {
+  text-decoration: none; color:black; }
+a:hover, a:active
+{ text-decoration: none; color:black; }
 
 /* #gocowboys {
   max-width: 100%;
