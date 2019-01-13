@@ -383,9 +383,14 @@ img {
   font-family: 'Archivo Black', sans-serif;
   font-size: 1.5rem;
   letter-spacing: -0.1rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   border: 5pt solid black;
   padding: 1rem 2rem;
+}
+
+#editing {
+  margin-top: 4rem;
+
 }
 
 .pages h3:hover {
