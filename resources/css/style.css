@@ -79,9 +79,11 @@ li a:hover:not(.active) {
 } */
 
 @media only screen and (max-width: 871px) {
-.menu ul {
+#navmain a {
   display: none;
 }
+
+
 }
 
 /* Bootstrap Overrides */
