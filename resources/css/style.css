@@ -308,6 +308,9 @@ padding: 1rem;
 }
 
 
+.jumbotron img:hover {
+  transform: scale(1.4);
+}
 
 
 /* Slick Overrides */
@@ -340,15 +343,13 @@ padding: 1rem;
 
 
 
-
-
-
 .images {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
   max-height: 100%;
 }
+
 
 
 .pages {
@@ -380,18 +381,20 @@ img {
 } */
 
 .pages h3 {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 2.5rem;
   letter-spacing: -0.1rem;
   margin-top: 3rem;
-  border: 5pt solid black;
+  border: 1pt solid black;
   padding: 1rem 2rem;
 }
 
 #editing {
-  margin-top: 4rem;
+  margin-top: 5rem;
 
 }
+
 
 .pages h3:hover {
   color: black;

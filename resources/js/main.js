@@ -30,9 +30,10 @@ $('.carousel').slick({
   slidesToScroll: 4,
   arrows: false,
   draggable: false,
-  pauseOnFocus: false,
-  pauseOnHover: false,
+  pauseOnFocus: true,
+  pauseOnHover: true,
   dots: false,
+  focusOnSelect: true,
   // speed: 300,
   responsive: [
 
@@ -69,6 +70,19 @@ $('.carousel').slick({
     // instead of a settings object
   ]
 });
+
+var SlickSlider = $t.slick({ autoplay: $auto, autoplaySpeed: $time, }); SlickSlider.on('afterChange', function(){ console.log("This mos def fires"); $('.image-zoom').trigger('zoom.destroy'); initZoom() });
+// ZOOM
+$('.background-writing').zoom();
+
+// STYLE GRAB
+$('.background-writing').zoom({ on:'grab' });
+
+// STYLE CLICK
+$('.background-writing').zoom({ on:'click' });
+
+// STYLE TOGGLE
+$('.background-writing').zoom({ on:'toggle' });
 
 
 
