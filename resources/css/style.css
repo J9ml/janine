@@ -179,7 +179,7 @@ padding: 1rem;
 }
 
   .banner p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 1rem 1rem 0.5rem 1rem;
 
   }
@@ -440,7 +440,7 @@ footer {
 
   @media only screen and (max-width: 404px) {
 
-    
+
   }
 
   @media only screen and (max-width: 680px) {
