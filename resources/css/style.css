@@ -183,6 +183,10 @@ padding: 1rem;
     padding: 1rem 1rem 0rem 1rem;
 
   }
+
+  .banner img {
+    padding-top: 6rem;
+  }
 }
 
 @media only screen and (max-width: 425px) {
